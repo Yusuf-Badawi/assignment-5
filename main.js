@@ -45,3 +45,13 @@ function submitComment() {
   nameField.value = '';
   commentField.value = '';
 }
+
+const commentBtn = document.querySelector(".show-hide")
+
+commentBtn.addEventListener("keydown", (e) => {
+  if(e.keyCode === 9) { // tab key
+    document.activeElement.click();
+  }
+});
+
+
